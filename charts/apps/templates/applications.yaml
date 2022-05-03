@@ -11,11 +11,11 @@ spec:
     repoURL:  {{ $.Values.global.spec.source.repoURL }}
     targetRevision: {{ default $.Values.global.spec.source.targetRevision .targetRevision }}
     path: charts/{{ .name }}
-    {{ if default $.Values.global.helmDefault .helm }} #todo: not sure it woeks
-    helm:
-      valueFiles:
-      - {{ $.Values.global.valuesFile }}
-    {{- end }}
+{{/*    {{ if default $.Values.global.helmDefault .helm }} #todo: not sure it woeks*/}}
+{{/*    helm:*/}}
+{{/*      valueFiles:*/}}
+{{/*      - {{ $.Values.global.valuesFile }}*/}}
+{{/*    {{- end }}*/}}
   destination:
     namespace: {{ default $.Values.global.spec.destination.namespace  .namespace }}
     server: {{ $.Values.global.spec.destination.server }}
