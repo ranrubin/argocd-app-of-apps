@@ -6,7 +6,7 @@ global:
 
 argocdApplications:
   helmGuestbook:
-    targetRevision: HEAD
+    targetRevision: rev
 
   kustomizeGuestbook:
     disable: true
