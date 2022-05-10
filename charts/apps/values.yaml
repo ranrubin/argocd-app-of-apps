@@ -1,4 +1,5 @@
 global:
+  env: development
   helmDefault: false
   valuesFile: values.yaml
   spec:

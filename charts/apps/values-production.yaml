@@ -1,4 +1,5 @@
 global:
+  env: production
   valuesFile: values-production.yaml
   spec:
     project: production
