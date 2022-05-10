@@ -8,7 +8,7 @@ global:
       server: https://kubernetes.default.svc
       namespace: default
     source:
-      repoURL: git@github.com:ranrubin/argocd-app-of-apps.git
+      repoURL: git@github.com:ranrubin/argocd-app-of-apps
       targetRevision: rev
 
 
