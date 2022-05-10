@@ -20,18 +20,18 @@ argocdApplications:
 #    namespace: helm-guestbook
 ##    targetRevision: HEAD
 #    helm: true
-#  helmHooks:
-#    disableAutomated: false
-#    disable: false
-#    name: helm-hooks
-#    namespace: helm-hooks
-##    targetRevision: HEAD
-#  kustomizeGuestbook:
-#    disableAutomated: false
-#    disable: false
-#    name: kustomize-guestbook
-#    namespace: kustomize-guestbook
-##    targetRevision: HEAD
+  helmHooks:
+    disableAutomated: false
+    disable: false
+    name: helm-hooks
+    namespace: helm-hooks
+#    targetRevision: HEAD
+  kustomizeGuestbook:
+    disableAutomated: false
+    disable: false
+    name: kustomize-guestbook
+    namespace: kustomize-guestbook
+#    targetRevision: HEAD
   syncWaves:
     disableAutomated: false
     disable: false
