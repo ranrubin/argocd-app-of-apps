@@ -9,8 +9,7 @@ global:
       namespace: default
     source:
       repoURL: https://github.com/ranrubin/argocd-app-of-apps
-      targetRevision: rev
-
+      targetRevision: HEAD
 
 argocdApplications:
   helmGuestbook:
