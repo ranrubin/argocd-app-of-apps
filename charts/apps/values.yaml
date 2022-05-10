@@ -13,13 +13,13 @@ global:
 
 
 argocdApplications:
-  helmGuestbook:
-    disableAutomated: false
-    disable: false
-    name: helm-guestbook
-    namespace: helm-guestbook
-#    targetRevision: HEAD
-    helm: true
+#  helmGuestbook:
+#    disableAutomated: false
+#    disable: false
+#    name: helm-guestbook
+#    namespace: helm-guestbook
+##    targetRevision: HEAD
+#    helm: true
   helmHooks:
     disableAutomated: false
     disable: false
