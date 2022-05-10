@@ -11,7 +11,7 @@ spec:
     repoURL:  {{ $.Values.global.spec.source.repoURL }}
     targetRevision: {{ default $.Values.global.spec.source.targetRevision .targetRevision }}
     path: charts/{{ .name }}
-    {{- if default $.Values.global.helmDefault .helm }} #todo: not sure it woeks
+    {{- if default $.Values.global.helmDefault .helm }}
     helm:
       valueFiles:
       - {{ $.Values.global.valuesFile }}
